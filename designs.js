@@ -4,7 +4,7 @@
 // When size is submitted by the user, call makeGrid()
 
 
-$('#colorPicker').on('click',function makeGrid() {
+$('#sizePicker').submit(function makeGrid() {
 
 // Your code goes here!
 
