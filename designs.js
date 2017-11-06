@@ -2,8 +2,9 @@
 
 let color = $('#colorPicker').val();
 
-$('#colorPicker').change(function colorChange() {
+$('#colorPicker').change(function colorSelect() {
 	color = $(this).val();
+	$(this).attr('value', color);
 });
 
 // Select size input
@@ -32,4 +33,10 @@ $('#sizePicker').submit(function makeGrid() {
 		$('tr').append('<td></td>');
 	};
 	return false;
+});
+
+// When cells are click change to selected color
+
+$('td').click(function () {
+	$(this).css('background-color', color);
 });
