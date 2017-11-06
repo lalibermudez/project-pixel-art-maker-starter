@@ -17,6 +17,7 @@ $('#input_width').keyup(function () {
 // When size is submitted by the user, call makeGrid()
 
 $('#sizePicker').submit(function makeGrid() {
+	$('tr').remove();
 	for (let i = 1; i <= gridHeight; i++) {
 		$('table').append('<tr></tr>');
 	};
