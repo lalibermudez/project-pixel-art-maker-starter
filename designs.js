@@ -1,4 +1,11 @@
 // Select color input
+
+let color = $('#colorPicker').val();
+
+$('#colorPicker').change(function colorChange() {
+	color = $(this).val();
+});
+
 // Select size input
 
 let gridHeight, gridWidth;
