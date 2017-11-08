@@ -11,12 +11,12 @@ $('#colorPicker').change(function colorSelect() {
 
 let gridHeight, gridWidth;
 
-$('#input_height').keyup(function () {
+$('#input_height').change(function () {
 	gridHeight = $(this).val();
 	$(this).attr('value', gridHeight);
 });
 
-$('#input_width').keyup(function () {
+$('#input_width').change(function () {
 	gridWidth = $(this).val();
 	$(this).attr('value', gridWidth);
 });
