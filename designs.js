@@ -33,11 +33,13 @@ $('#sizePicker').submit(function makeGrid() {
 		$('tr').append('<td></td>');
 	};
 	
+	// When cells are click change to selected color
+
+	$('td').click(function () {
+		$(this).css('background-color', color);
+	});
+
 	event.preventDefault();
 });
 
-// When cells are click change to selected color
 
-$('td').click(function () {
-	$(this).css('background-color', color);
-});
