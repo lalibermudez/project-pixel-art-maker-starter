@@ -32,7 +32,8 @@ $('#sizePicker').submit(function makeGrid() {
 	for (let j = 1; j <= gridWidth; j++) {
 		$('tr').append('<td></td>');
 	};
-	return false;
+	
+	event.preventDefault();
 });
 
 // When cells are click change to selected color
